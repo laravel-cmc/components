@@ -71,7 +71,7 @@ class HtmlElement
      * @param array $classes
      * @return string
      */
-    public function classMerge(... $classes): string {
+    public function classMerge(...$classes): string {
         $result = '';
 
         foreach ($classes as $class) {
@@ -99,12 +99,11 @@ class HtmlElement
      * @param null|string $class
      * @return void
      */
-    public function removeClass(string  $class = null) {
+    public function removeClass(string $class = null) {
         if (isset($this->attributes['class'])) {
             if ($class === null) {
                 unset($this->attributes['class']);
-            }
-            else {
+            } else {
                 $classes = explode(' ', $this->attributes['class']);
                 unset($classes[$class]);
                 $this->attributes['class'] = trim(implode(' ', $classes));
@@ -116,7 +115,7 @@ class HtmlElement
      * @param array $styles
      * @return string
      */
-    public function styleMerge(... $styles): string {
+    public function styleMerge(...$styles): string {
         $result = '';
 
         foreach ($styles as $style) {
@@ -134,7 +133,7 @@ class HtmlElement
      * @param array $attributes
      * @return array
      */
-    public function attributesMerge(... $attributes): array {
+    public function attributesMerge(...$attributes): array {
         $class = $style = [];
         $result = [];
 
@@ -169,18 +168,26 @@ class HtmlElement
 
         if (is_array($value)) {
             if ($key == 'style') {
-                return 'style="'.$this->arrayValueToStr($value, '').'"';
-            }
-            else {
-                return $key.'="'.$this->arrayValueToStr($value).'"';
+                return 'style="' . $this->arrayValueToStr($value, '') . '"';
+            } else {
+                return $key . '="' . $this->arrayValueToStr($value) . '"';
             }
         }
 
         if (!is_null($value)) {
-            return $key.'="'.e($value, false).'"';
-        }
-        else {
+            return $key . '="' . e($value, false) . '"';
+        } else {
             return $key;
         }
+    }
+
+    public function attribute(): string {
+        $result = '';
+
+        foreach ($this->attributes as $attribute => $value) {
+            $result .= $this->attributeElement($attribute, $value) . ' ';
+        }
+
+        return trim($result);
     }
 }

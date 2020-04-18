@@ -33,11 +33,22 @@ class BootstrapComponent extends Component
     }
 
     /**
-     * @param null|string $name
+     * @param string|null $name
+     * @param string|null $tag
+     * @param array $attributes
+     * @param null $content
      * @return HtmlElement
      */
-    public function element(string $name = null): HtmlElement {
-        return $this->elements[$name] ?? $this->elements['main'] ?? new HtmlElement();
+    public function element(string $name = null, string $tag = null, array $attributes = [], $content = null): HtmlElement {
+        if ($name === null) {
+            return $this->elements['main'];
+        }
+        elseif (isset($this->elements[$name])) {
+            return $this->elements[$name];
+        }
+        else {
+            return $this->elements[$name] = new HtmlElement($tag, $attributes, $content);
+        }
     }
 
     /**
