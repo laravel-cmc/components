@@ -44,7 +44,7 @@ class BootstrapComponent extends Component
     public function render() {
         return <<<'blade'
         <{{ $tag }} {{ $attributes->merge($element()->attributes) }}>
-            {!! $element('main')->content !!}
+            {!! $element()->content !!}
             {{ $slot }}
         </{{ $tag }}>
         blade;

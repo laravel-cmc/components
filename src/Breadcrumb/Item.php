@@ -39,7 +39,7 @@ class Item extends BootstrapComponent
         return <<<'blade'
         <{{ $tag }} {{ $attributes->merge($element()->attributes) }}>
             @isset($href)<a href="{{ $href }}">@endisset
-            {!! $content !!}
+            {!! $element()->content !!}
             {{ $slot }}
             @isset($href)</a>@endisset
         </{{ $tag }}>

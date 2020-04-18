@@ -27,7 +27,7 @@ class Breadcrumb extends BootstrapComponent
         return <<<'blade'
         <{{ $tag }} {{ $attributes->merge($element()->attributes) }}>
             <ol class="breadcrumb">
-            {!! $element('main')->content !!}
+            {!! $element()->content !!}
             {{ $slot }}
             </ol>
         </{{ $tag }}>
