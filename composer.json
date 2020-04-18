@@ -12,7 +12,9 @@
             "email": "rak.vladimir.victorovich@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "php": ">=7.3",
+    },
     "autoload": {
         "psr-4": {
             "LaravelCMC\\Components\\": "src/"
