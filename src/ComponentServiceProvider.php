@@ -35,7 +35,7 @@ class ComponentServiceProvider extends ServiceProvider
         Blade::component('badge',               Badge::class);
         // Breadcrumb
         Blade::component('breadcrumb',          Breadcrumb::class);
-        //Blade::component('breadcrumb.item', Breadcrumb\Item::class);
+        Blade::component('breadcrumb.item',     Breadcrumb\Item::class);
         // Button
         //Blade::component('button',          Button::class);
         //Blade::component('button.toolbar',  Button\Toolbar::class);
