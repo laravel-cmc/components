@@ -21,12 +21,12 @@ class Item extends BootstrapComponent
      * @param bool $active
      * @param null $href
      */
-    public function __construct($tag = 'li', $theme = null, $content = null, $active = false, $href = null) {
-        parent::__construct($tag, $theme, $content);
+    public function __construct($tag = 'li', $theme = null, $content = null, $active = null, $href = null) {
+        parent::__construct($tag, $content);
 
         $this->href = $href;
-        if ($this->isTrue($active)) {
-            $this->addClass('active');
+        if (isset($active)) {
+            $this->element()->addClass('active');
         }
     }
 
@@ -37,7 +37,7 @@ class Item extends BootstrapComponent
      */
     public function render() {
         return <<<'blade'
-        <{{ $tag }} {{ $attributes->merge($bootstrapAttributes) }}>
+        <{{ $tag }} {{ $attributes->merge($element()->attributes) }}>
             @isset($href)<a href="{{ $href }}">@endisset
             {!! $content !!}
             {{ $slot }}
