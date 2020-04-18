@@ -6,6 +6,8 @@ use LaravelCMC\Components\BootstrapComponent;
 
 class Item extends BootstrapComponent
 {
+    //public $tag = 'li';
+
     public $href;
 
     /**
@@ -16,12 +18,11 @@ class Item extends BootstrapComponent
     /**
      * Item constructor.
      * @param string $tag
-     * @param null $theme
      * @param null $content
      * @param bool $active
      * @param null $href
      */
-    public function __construct($tag = 'li', $theme = null, $content = null, $active = null, $href = null) {
+    public function __construct($tag = 'li', $content = null, $active = null, $href = null) {
         parent::__construct($tag, $content);
 
         $this->href = $href;
@@ -37,12 +38,12 @@ class Item extends BootstrapComponent
      */
     public function render() {
         return <<<'blade'
-        <{{ $tag }} {{ $attributes->merge($element()->attributes) }}>
+        <{{ $element()->tag }} {{ $attributes->merge($element()->attributes) }}>
             @isset($href)<a href="{{ $href }}">@endisset
             {!! $element()->content !!}
             {{ $slot }}
             @isset($href)</a>@endisset
-        </{{ $tag }}>
+        </{{ $element()->tag }}>
         blade;
     }
 }
