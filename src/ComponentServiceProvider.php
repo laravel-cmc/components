@@ -41,6 +41,13 @@ class ComponentServiceProvider extends ServiceProvider
         Blade::component('btn.toolbar',         Btn\Toolbar::class);
         Blade::component('btn.group',           Btn\Group::class);
         // Card
-        //Blade::component('card',            Card::class);
+        Blade::component('card',                Card::class);
+        Blade::component('card.body',           Card\Body::class);
+        Blade::component('card.footer',         Card\Footer::class);
+        Blade::component('card.header',         Card\Header::class);
+        Blade::component('card.img',            Card\Img::class);
+        Blade::component('card.link',           Card\Link::class);
+        Blade::component('card.text',           Card\Text::class);
+        Blade::component('card.title',          Card\Title::class);
     }
 }
