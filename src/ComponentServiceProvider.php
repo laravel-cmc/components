@@ -58,5 +58,8 @@ class ComponentServiceProvider extends ServiceProvider
         Blade::component('nav.link',            Nav\Link::class);
         Blade::component('nav.content',         Nav\Content::class);
         Blade::component('nav.pane',            Nav\Pane::class);
+        // Form
+        Blade::component('form',                Form::class);
+        Blade::component('form.group',          Form\Group::class);
     }
 }
