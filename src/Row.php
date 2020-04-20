@@ -21,7 +21,7 @@ class Row extends BootstrapComponent
      * @param null|string $align start|end|center|baseline|stretch
      * @param null|string $justify start|end|center|between|around
      */
-    public function __construct($tag = 'div', $content = null, $cols = null, $align = null, $justify = null) {
+    public function __construct($tag = null, $content = null, $cols = null, $align = null, $justify = null) {
         parent::__construct($tag, $content);
 
         $this->element()->addClass($this->colsClass($cols));

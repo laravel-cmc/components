@@ -52,5 +52,11 @@ class ComponentServiceProvider extends ServiceProvider
         Blade::component('card.group',          Card\Group::class);
         Blade::component('card.deck',           Card\Deck::class);
         Blade::component('card.columns',        Card\Columns::class);
+        // Nav
+        Blade::component('nav',                 Nav::class);
+        Blade::component('nav.item',            Nav\Item::class);
+        Blade::component('nav.link',            Nav\Link::class);
+        Blade::component('nav.content',         Nav\Content::class);
+        Blade::component('nav.pane',            Nav\Pane::class);
     }
 }

@@ -15,11 +15,11 @@ class Container extends BootstrapComponent
      * @param null $theme
      * @param null $content
      */
-    public function __construct($tag = 'div', $theme = null, $content = null, $fluid = false) {
-        parent::__construct($tag, $theme, $content);
+    public function __construct($tag = null, $content = null, $fluid = false) {
+        parent::__construct($tag, $content);
 
         if ($fluid) {
-            $this->element('main')->setAttribute('class', $this->bootstrapClass.'-fluid');
+            $this->element()->setAttribute('class', $this->bootstrapClass.'-fluid');
         }
     }
 }
