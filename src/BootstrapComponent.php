@@ -6,6 +6,8 @@ use Illuminate\View\Component;
 
 class BootstrapComponent extends Component
 {
+    protected static $model = null;
+
     public $tag = 'div';
 
     /**

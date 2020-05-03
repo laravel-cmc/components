@@ -3,15 +3,15 @@
 namespace LaravelCMC\Components;
 
 use LaravelCMC\Components\Utilities\Size;
+use LaravelCMC\Components\Utilities\Stateable;
 use LaravelCMC\Components\Utilities\Theme;
+use LaravelCMC\Components\Utilities\Toggleable;
 
 class Btn extends BootstrapComponent
 {
-    use Theme;
+    use Theme, Size, Toggleable, Stateable;
 
-    use Size;
-
-    public $type; //+
+    public $type;
 
     public $name;
 
@@ -35,13 +35,20 @@ class Btn extends BootstrapComponent
      * @param null|string $grid
      * @param bool $block
      * @param bool $active
-     * @param null $disabled
+     * @param bool $disabled
      * @param bool $checked
      * @param null|string $id
+     *
+     * @param null|string $toggle
+     * @param null|string $target
+     * @param null|string $parent
+     * @param bool $toggled
+     * @param bool $split
      */
     public function __construct(
         $tag = 'button', $type = 'button', $name = null, $theme = null, $value = null, string $label = null,
-        $grid = null, $block = null, $active = null, $disabled = null, $checked = null, string $id  = null
+        $grid = null, $block = null, bool $active = false, bool $disabled = false, $checked = null, string $id  = null,
+        string $toggle = null, string $target = null, string $parent = null, bool $toggled = false, bool $split = false
     ) {
         parent::__construct($tag, $value);
 
@@ -61,27 +68,17 @@ class Btn extends BootstrapComponent
 
         switch ($tag) {
             case 'a':
-                $this->element()->setAttribute('role', 'button');
-                if ($active) {
-                    $this->element()->setAttribute('aria-pressed', 'true');
-                }
-                if ($disabled) {
-                    $this->element()->setAttribute('aria-disabled', 'true');
-                    $this->element()->setAttribute('tabindex', '-1');
-                    $this->element()->addClass('disabled');
-                }
+                $this->setStateableAttributes($active, $disabled);
                 break;
             case 'button':
                 $this->element()->setAttribute('type', $type);
-                if ($disabled)
-                    $this->element()->setAttribute('disabled');
-                break;
+                $this->setStateableAttributes($active, $disabled);
             case 'input':
                 if ($disabled)
                     $this->element()->setAttribute('disabled');
 
                 if (in_array($type, ['checkbox', 'radio'])) {
-                    $this->element('input', null, ['type' => $type, 'name' => $name, 'value' => $value], $label);
+                    $this->element('input', 'input', ['type' => $type, 'name' => $name, 'value' => $value], $label);
                     if ($disabled)
                         $this->element('input')->setAttribute('disabled');
                     if ($active ?? $checked)
@@ -95,11 +92,15 @@ class Btn extends BootstrapComponent
                     }
                 }
                 else {
+                    $this->setStateableAttributes($active, $disabled);
                     $this->element()->setAttribute('type', $type);
                     $this->element()->setAttribute('name', $name);
                     $this->element()->setAttribute('value', $value);
                 }
         }
+
+        $this->setStateableAttributes($active, $disabled);
+        $this->setToggleableAttributes($toggle, $target, $parent, $toggled, $split);
 
     }
 

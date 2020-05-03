@@ -17,6 +17,9 @@ class ComponentServiceProvider extends ServiceProvider
         /**
          * GRID
          */
+        // Html
+        Blade::component('option',              Option::class);
+        Blade::component('optgroup',            Optgroup::class);
         // Container
         Blade::component('container',           Container::class);
         // Row
@@ -60,6 +63,18 @@ class ComponentServiceProvider extends ServiceProvider
         Blade::component('nav.pane',            Nav\Pane::class);
         // Form
         Blade::component('form',                Form::class);
-        Blade::component('form.group',          Form\Group::class);
+        Blade::component('form.open',           Form\Open::class);
+        Blade::component('form.close',          Form\Close::class);
+        Blade::component('form.input',          Form\Input::class);
+        Blade::component('form.select',         Form\Select::class);
+        Blade::component('form.textarea',       Form\Textarea::class);
+        Blade::component('form.control',        Form\Control::class);
+        // Collapse
+        Blade::component('collapse',            Collapse::class);
+        // Dropdown
+        Blade::component('dropdown',            Dropdown::class);
+        Blade::component('dropdown.menu',       Dropdown\Menu::class);
+        Blade::component('dropdown.header',     Dropdown\Header::class);
+        Blade::component('dropdown.item',       Dropdown\Item::class);
     }
 }
