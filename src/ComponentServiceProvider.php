@@ -73,8 +73,10 @@ class ComponentServiceProvider extends ServiceProvider
         Blade::component('collapse',            Collapse::class);
         // Dropdown
         Blade::component('dropdown',            Dropdown::class);
-        Blade::component('dropdown.menu',       Dropdown\Menu::class);
+        Blade::component('dropdown.divider',    Dropdown\Divider::class);
         Blade::component('dropdown.header',     Dropdown\Header::class);
         Blade::component('dropdown.item',       Dropdown\Item::class);
+        Blade::component('dropdown.menu',       Dropdown\Menu::class);
+        Blade::component('dropdown.text',       Dropdown\Text::class);
     }
 }
