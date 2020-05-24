@@ -27,8 +27,7 @@ class BootstrapComponent extends Component
      */
     public function __construct($tag = null, $content = null) {
         isset($tag)
-            ? $this->tag = $tag
-            : null;
+            ? $this->tag = $tag : null;
 
         $this->elements['main'] = new HtmlElement($this->tag, [], $content);
         $this->element('main')->addClass($this->bootstrapClass);

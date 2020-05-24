@@ -65,6 +65,7 @@ class ComponentServiceProvider extends ServiceProvider
         Blade::component('form',                Form::class);
         Blade::component('form.open',           Form\Open::class);
         Blade::component('form.close',          Form\Close::class);
+        Blade::component('form.group',          Form\Group::class);
         Blade::component('form.input',          Form\Input::class);
         Blade::component('form.select',         Form\Select::class);
         Blade::component('form.textarea',       Form\Textarea::class);
@@ -78,5 +79,11 @@ class ComponentServiceProvider extends ServiceProvider
         Blade::component('dropdown.item',       Dropdown\Item::class);
         Blade::component('dropdown.menu',       Dropdown\Menu::class);
         Blade::component('dropdown.text',       Dropdown\Text::class);
+        // Navbar
+        Blade::component('navbar',              Navbar::class);
+        Blade::component('navbar.brand',        Navbar\Brand::class);
+        Blade::component('navbar.collapse',         Navbar\Collapse::class);
+        Blade::component('navbar.text',         Navbar\Text::class);
+        Blade::component('navbar.toggler',      Navbar\Toggler::class);
     }
 }

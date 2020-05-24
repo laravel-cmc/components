@@ -11,7 +11,7 @@ class Nav extends BootstrapComponent
     protected $bootstrapClass = 'nav';
 
     public function __construct(
-        $tag = null,
+        $tag = 'nav',
         $content = null,
         string $justify = null,
         bool $vertical = false,
@@ -25,6 +25,8 @@ class Nav extends BootstrapComponent
     ) {
         parent::__construct($tag, $content);
 
+        if ($id)
+            $this->element()->setAttribute('id', $id);
         $this->element()->addClass($this->justifyClass($justify));
         $this->element()->addClass($vertical ? 'flex-column' : null);
         $this->element()->addClass($tabs ? $this->bootstrapClass.'-tabs' : null);

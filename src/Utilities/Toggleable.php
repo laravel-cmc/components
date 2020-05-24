@@ -10,10 +10,10 @@ trait Toggleable
 
             if ($this->element()->tag == 'a') {
                 $this->element()->setAttribute('role', 'button');
-                $this->element()->setAttribute('href', $target);
+                $target ? $this->element()->setAttribute('href', $target) : null;
             }
             else {
-                $this->element()->setAttribute('data-target', $target);
+                $target ? $this->element()->setAttribute('data-target', $target) : null;
             }
 
             if (isset($parent))
