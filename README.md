@@ -150,7 +150,7 @@ If type="checkbox" or type="radio" id generate automatically, if not set.
 - @param *bool* show
 
 #### x-dropdown
-- @param *bool* btnGroup
+- @param *bool* btn-group
 - @param *bool* up
 - @param *bool* left
 - @param *bool* right
