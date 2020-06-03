@@ -15,47 +15,47 @@ https://getbootstrap.com/docs/4.5/layout/grid/#order-classes
 
 #### x-container
 Use .container for a responsive pixel width or .container-fluid for width: 100% across all viewport and device sizes.
-- @param *bool* fluid
+- **attribute** *bool* fluid
 
 #### x-row
 Rows are wrappers for columns. 
 
-- @param *string|null* cols `xs:1..12;sm...xl`
-- @param *string|null* align `start|end|center|baseline|stretch`
-- @param *string|null* justify `start|end|center|between|around`
+- **attribute** *string|null* cols `xs:1..12;sm...xl`
+- **attribute** *string|null* align `start|end|center|baseline|stretch`
+- **attribute** *string|null* justify `start|end|center|between|around`
 
 #### x-col
-- @param *string|null* cols `xs:1..12|auto;sm...xl`, `xs:1` equal to `class="col-1"`, if not set `col`
-- @param *string|null* align `start|center|end`
-- @param *string|null* order `first|last|1...12`
-- @param *string|null* offset `xs:1..12;sm...xl`
+- **attribute** *string|null* cols `xs:1..12|auto;sm...xl`, `xs:1` equal to `class="col-1"`, if not set `col`
+- **attribute** *string|null* align `start|center|end`
+- **attribute** *string|null* order `first|last|1...12`
+- **attribute** *string|null* offset `xs:1..12;sm...xl`
 
 ## Components
 see https://getbootstrap.com/docs/4.5/components
 
 #### x-alert
-- @param *string|null* tag
-- @param *string|null* theme `primary|secondary|success|danger|warning|info|light|dark`
-- @param *bool* dismissible `false`
+- **attribute** *string|null* tag
+- **attribute** *string|null* theme `primary|secondary|success|danger|warning|info|light|dark`
+- **attribute** *bool* dismissible `false`
 
 #### x-alert.dismiss
-- @param *string|null* tag `button`
+- **attribute** *string|null* tag `button`
 
 #### x-alert.heading
-- @param *string|null* tag `h4`
+- **attribute** *string|null* tag `h4`
 
 #### x-alert.link
 - default parameters
 
 #### x-badge
-- @param *string|null* theme `primary|secondary|success|danger|warning|info|light|dark`
-- @param *bool* pill
+- **attribute** *string|null* theme `primary|secondary|success|danger|warning|info|light|dark`
+- **attribute** *bool* pill
 
 #### x-breadcrumb
 - default parameters
 
 #### x-breadcrumb.item
-- @param *bool* active
+- **attribute** *bool* active
 
 #### x-btn
 see https://getbootstrap.com/docs/4.5/components/buttons/, 
@@ -63,45 +63,45 @@ https://getbootstrap.com/docs/4.5/components/button-group/
 
 If type="checkbox" or type="radio" id generate automatically, if not set.
 
-- @param *string* tag `a|button|input`
-- @param *string* type
-- @param *string|null* name
-- @param *string|null* theme `primary|secondary|success|danger|warning|info|light|dark`
-- @param *string|null* value
-- @param *string|null* label
-- @param *string|null* grid `sm|lg`
-- @param *bool* block
-- @param *bool* active
-- @param *bool* disabled
-- @param *bool* checked
-- @param *string|null* id
-- @param *string|null* toggle attribute data-toggle
-- @param *string|null* target attribute data-target
-- @param *string|null* parent attribute data-parent
-- @param *bool* toggled
-- @param *bool* split
+- **attribute** *string* tag `a|button|input`
+- **attribute** *string* type
+- **attribute** *string|null* name
+- **attribute** *string|null* theme `primary|secondary|success|danger|warning|info|light|dark`
+- **attribute** *string|null* value
+- **attribute** *string|null* label
+- **attribute** *string|null* grid `sm|lg`
+- **attribute** *bool* block
+- **attribute** *bool* active
+- **attribute** *bool* disabled
+- **attribute** *bool* checked
+- **attribute** *string|null* id
+- **attribute** *string|null* toggle attribute data-toggle
+- **attribute** *string|null* target attribute data-target
+- **attribute** *string|null* parent attribute data-parent
+- **attribute** *bool* toggled
+- **attribute** *bool* split
 
 #### x-btn.group
-- @param *bool* toggle
-- @param *string|null* grid `sm|lg`
-- @param *bool* vertical
+- **attribute** *bool* toggle
+- **attribute** *string|null* grid `sm|lg`
+- **attribute** *bool* vertical
 
 #### x-btn.toolbar
-- @param *string|null* justify `start|end|center|between|around`
+- **attribute** *string|null* justify `start|end|center|between|around`
 
 #### x-card
-- @param *string|null* color
-- @param *string|null* bg
-- @param *string|null* bg-gradient
-- @param *string|null* border
-- @param *string|null* text
+- **attribute** *string|null* color
+- **attribute** *string|null* bg
+- **attribute** *string|null* bg-gradient
+- **attribute** *string|null* border
+- **attribute** *string|null* text
 
 #### x-card.body
-- @param *string|null* color
-- @param *string|null* bg
-- @param *string|null* bg-gradient
-- @param *string|null* border
-- @param *string|null* text
+- **attribute** *string|null* color
+- **attribute** *string|null* bg
+- **attribute** *string|null* bg-gradient
+- **attribute** *string|null* border
+- **attribute** *string|null* text
 
 #### x-card.columns
 - default parameters
@@ -110,50 +110,50 @@ If type="checkbox" or type="radio" id generate automatically, if not set.
 - default parameters
 
 #### x-card.footer
-- @param *string|null* color
-- @param *string|null* bg
-- @param *string|null* bg-gradient
-- @param *string|null* border
-- @param *string|null* text
+- **attribute** *string|null* color
+- **attribute** *string|null* bg
+- **attribute** *string|null* bg-gradient
+- **attribute** *string|null* border
+- **attribute** *string|null* text
 
 #### x-card.group
 - default parameters
 
 #### x-card.header
-- @param *string|null* color
-- @param *string|null* bg
-- @param *string|null* bg-gradient
-- @param *string|null* border
-- @param *string|null* text
+- **attribute** *string|null* color
+- **attribute** *string|null* bg
+- **attribute** *string|null* bg-gradient
+- **attribute** *string|null* border
+- **attribute** *string|null* text
 
 #### x-card.img
-- @param *string|null* src
-- @param *string|null* align `top|overlay`
+- **attribute** *string|null* src
+- **attribute** *string|null* align `top|overlay`
 
 #### x-card.link
-- @param *string|null* color
-- @param *string|null* text
+- **attribute** *string|null* color
+- **attribute** *string|null* text
 
 #### x-card.text
-- @param *string|null* color
-- @param *string|null* bg
-- @param *string|null* bg-gradient
-- @param *string|null* text
+- **attribute** *string|null* color
+- **attribute** *string|null* bg
+- **attribute** *string|null* bg-gradient
+- **attribute** *string|null* text
 
 #### x-card.title
-- @param *string|null* color
-- @param *string|null* bg
-- @param *string|null* bg-gradient
-- @param *string|null* text
+- **attribute** *string|null* color
+- **attribute** *string|null* bg
+- **attribute** *string|null* bg-gradient
+- **attribute** *string|null* text
 
 #### x-collapse
-- @param *bool* show
+- **attribute** *bool* show
 
 #### x-dropdown
-- @param *bool* btn-group
-- @param *bool* up
-- @param *bool* left
-- @param *bool* right
+- **attribute** *bool* btn-group
+- **attribute** *bool* up
+- **attribute** *bool* left
+- **attribute** *bool* right
 
 #### x-dropdown.divider
 - default parameters
@@ -162,23 +162,23 @@ If type="checkbox" or type="radio" id generate automatically, if not set.
 - default parameters
 
 #### x-dropdown.item
-- @param *string|null* type
-- @param *bool* active
-- @param *bool* disabled
+- **attribute** *string|null* type
+- **attribute** *bool* active
+- **attribute** *bool* disabled
 
 #### x-dropdown.menu
-- @param *string|null* $labelledby
+- **attribute** *string|null* $labelledby
 
 #### x-dropdown.text
 - default parameters
 
 #### x-form
-- @param *string* accept-charset (default `utf-8`)
-- @param *string* method (default `get`)
-- @param *string|null* enctype (default `application/x-www-form-urlencoded`)
-- @param *bool* $file
-- @param *bool* $inline
-- @param *bool* $validation
+- **attribute** *string* accept-charset (default `utf-8`)
+- **attribute** *string* method (default `get`)
+- **attribute** *string|null* enctype (default `application/x-www-form-urlencoded`)
+- **attribute** *bool* $file
+- **attribute** *bool* $inline
+- **attribute** *bool* $validation
 
 #### x-form.close
 -- in progress
@@ -187,77 +187,77 @@ If type="checkbox" or type="radio" id generate automatically, if not set.
 -- in progress
 
 #### x-form.group
-- @param *bool* row
-- @param *string|null* name (for show error)
-- @param *string* invalid `feedback|tooltip` (default `feedback`)
+- **attribute** *bool* row
+- **attribute** *string|null* name (for show error)
+- **attribute** *string* invalid `feedback|tooltip` (default `feedback`)
 
 #### x-form.input
-- @param *string* type
-- @param *string|null* id
-- @param *string|null* name
-- @param *null* value
-- @param *bool* checked
-- @param *string|null* grid
-- @param *string|null* src
+- **attribute** *string* type
+- **attribute** *string|null* id
+- **attribute** *string|null* name
+- **attribute** *null* value
+- **attribute** *bool* checked
+- **attribute** *string|null* grid
+- **attribute** *string|null* src
 
 #### x-form.open
 -- in progress
 
 #### x-form.select
 -- in progress
-- @param *string|null* id
-- @param *string|null* name
-- @param *null* value
-- @param *string|null* grid
-- @param *array* list
+- **attribute** *string|null* id
+- **attribute** *string|null* name
+- **attribute** *null* value
+- **attribute** *string|null* grid
+- **attribute** *array* list
 
 #### x-form.textarea
-- @param *string|null* id
-- @param *string|null* name
-- @param *null* value
-- @param *string|null* grid
+- **attribute** *string|null* id
+- **attribute** *string|null* name
+- **attribute** *null* value
+- **attribute** *string|null* grid
 
 #### x-nav
-- @param *string|null* justify
-- @param *bool* vertical
-- @param *bool* tabs
-- @param *bool* pills
-- @param *bool* fill
-- @param *bool* justified
-- @param *string|null* slug (to associate with child elements)
-- @param *string|null* id
-- @param *bool* card
+- **attribute** *string|null* justify
+- **attribute** *bool* vertical
+- **attribute** *bool* tabs
+- **attribute** *bool* pills
+- **attribute** *bool* fill
+- **attribute** *bool* justified
+- **attribute** *string|null* slug (to associate with child elements)
+- **attribute** *string|null* id
+- **attribute** *bool* card
 
 #### x-nav.content
-- @param *string|null* slug (to associate with parent elements)
+- **attribute** *string|null* slug (to associate with parent elements)
 
 #### x-nav.item
 - default parameters
 
 #### x-nav.link
-- @param *bool* active
-- @param *bool* disabled
-- @param *string|null* slug
-- @param *bool* tab
-- @param *bool* pill
+- **attribute** *bool* active
+- **attribute** *bool* disabled
+- **attribute** *string|null* slug
+- **attribute** *bool* tab
+- **attribute** *bool* pill
 
 #### x-nav.pane
-- @param *bool* active
-- @param *string|null* slug (to associate with parent elements)
+- **attribute** *bool* active
+- **attribute** *string|null* slug (to associate with parent elements)
 
 #### x-navbar
-- @param *string|null* expand
-- @param *string|null* theme
-- @param *string|null* bg
-- @param *bool* fixed-top
-- @param *bool* fixed-bottom
-- @param *bool* sticky-top
+- **attribute** *string|null* expand
+- **attribute** *string|null* theme
+- **attribute** *string|null* bg
+- **attribute** *bool* fixed-top
+- **attribute** *bool* fixed-bottom
+- **attribute** *bool* sticky-top
 
 #### x-navbar.brand
 - default parameters
 
 #### x-navbar.collapse
-- @param *bool* show
+- **attribute** *bool* show
 
 #### x-navbar.text
 - default parameters
