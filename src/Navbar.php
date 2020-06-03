@@ -11,6 +11,17 @@ class Navbar extends BootstrapComponent
 
     protected $bootstrapClass = 'navbar';
 
+    /**
+     * Navbar constructor.
+     * @param string $tag
+     * @param null $content
+     * @param string|null $expand
+     * @param string|null $theme
+     * @param string|null $bg
+     * @param bool $fixedTop
+     * @param bool $fixedBottom
+     * @param bool $stickyTop
+     */
     public function __construct(
         $tag = 'nav', $content = null, string $expand = null, string $theme = null, string $bg = null,
         bool $fixedTop = false, bool $fixedBottom = false, bool $stickyTop = false

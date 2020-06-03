@@ -10,7 +10,17 @@ class Link extends BootstrapComponent
 
     protected $bootstrapClass = 'nav-link';
 
-    public function __construct($tag = null, $content = null, bool $active = null, bool $disabled = null, string $slug = null, bool $tab = false, bool $pill = false) {
+    /**
+     * Link constructor.
+     * @param null $tag
+     * @param null $content
+     * @param bool $active
+     * @param bool $disabled
+     * @param string|null $slug
+     * @param bool $tab
+     * @param bool $pill
+     */
+    public function __construct($tag = null, $content = null, bool $active = false, bool $disabled = false, string $slug = null, bool $tab = false, bool $pill = false) {
         parent::__construct($tag, $content);
 
         if ($active) {

@@ -12,10 +12,10 @@ class Col extends BootstrapComponent
      * Col constructor.
      * @param string $tag
      * @param null|string $content
-     * @param null|string $cols
+     * @param null|string $cols xs:1..12|auto;sm...xl
      * @param null|string $align start|center|end
      * @param null|string $order first|last|1...12
-     * @param null|string $offset
+     * @param null|string $offset xs:1..12;sm...xl
      */
     public function __construct($tag = 'div', $content = null, string $cols = null, $align = null, $order = null, $offset = null) {
         parent::__construct($tag, $content);

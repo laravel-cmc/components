@@ -17,7 +17,7 @@ class Row extends BootstrapComponent
      * Row constructor.
      * @param string $tag
      * @param null|string $content
-     * @param null|string $cols
+     * @param null|string $cols xs:1..12|auto;sm...xl
      * @param null|string $align start|end|center|baseline|stretch
      * @param null|string $justify start|end|center|between|around
      */

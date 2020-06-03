@@ -18,6 +18,7 @@ class Select extends BootstrapComponent
 
     /**
      * Select constructor.
+     *
      * @param string|null $id
      * @param string|null $name
      * @param null $value

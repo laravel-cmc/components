@@ -14,7 +14,7 @@ class Dismiss extends BootstrapComponent
 
     /**
      * Alert constructor.
-     * @param null|string $tag
+     * @param null|string $tag 'button'
      * @param null|string $content
      */
     public function __construct($tag = 'button', $content = null) {

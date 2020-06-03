@@ -17,7 +17,6 @@ class Toolbar extends BootstrapComponent
     /**
      * Alert constructor.
      * @param string $tag
-     * @param null|string $theme
      * @param null|string $content
      * @param null|string $justify
      */

@@ -12,7 +12,7 @@ class Container extends BootstrapComponent
     /**
      * Alert constructor.
      * @param string $tag
-     * @param null $theme
+     * @param bool $fluid
      * @param null $content
      */
     public function __construct($tag = null, $content = null, $fluid = false) {

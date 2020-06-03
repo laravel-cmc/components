@@ -15,6 +15,15 @@ class Text extends BootstrapComponent
      */
     protected $bootstrapClass = 'card-title';
 
+    /**
+     * Text constructor.
+     * @param string $tag
+     * @param null $content
+     * @param null $color
+     * @param null $bg
+     * @param null $bgGradient
+     * @param string|null $text
+     */
     public function __construct($tag = 'p', $content = null, $color = null, $bg = null, $bgGradient = null, string $text = null) {
         parent::__construct($tag, $content);
 

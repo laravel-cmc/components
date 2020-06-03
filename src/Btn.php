@@ -38,7 +38,6 @@ class Btn extends BootstrapComponent
      * @param bool $disabled
      * @param bool $checked
      * @param null|string $id
-     *
      * @param null|string $toggle
      * @param null|string $target
      * @param null|string $parent

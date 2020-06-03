@@ -15,12 +15,18 @@ class Textarea extends BootstrapComponent
      */
     protected $bootstrapClass = 'form-control';
 
-
+    /**
+     * Textarea constructor.
+     * @param string|null $id
+     * @param string|null $name
+     * @param null $value
+     * @param string|null $grid
+     */
     public function __construct(
         string $id = null,
-        $name = null,
+        string $name = null,
         $value = null,
-        $grid = null
+        string $grid = null
     ) {
         parent::__construct('textarea', $value);
 

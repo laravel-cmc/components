@@ -22,11 +22,11 @@ class Item extends BootstrapComponent
      * @param bool $active
      * @param null $href
      */
-    public function __construct($tag = 'li', $content = null, $active = null, $href = null) {
+    public function __construct($tag = 'li', $content = null, $active = false, $href = null) {
         parent::__construct($tag, $content);
 
         $this->href = $href;
-        if (isset($active)) {
+        if ($active) {
             $this->element()->addClass('active');
         }
     }

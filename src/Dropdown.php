@@ -6,6 +6,15 @@ class Dropdown extends BootstrapComponent
 {
     protected $bootstrapClass = 'dropdown';
 
+    /**
+     * Dropdown constructor.
+     * @param null $tag
+     * @param null $content
+     * @param bool $btnGroup
+     * @param bool $up
+     * @param bool $left
+     * @param bool $right
+     */
     public function __construct($tag = null, $content = null, bool $btnGroup = false, bool $up = false, bool $left = false, bool $right = false) {
         if ($btnGroup)
             $this->bootstrapClass = 'btn-group';

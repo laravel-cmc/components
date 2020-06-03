@@ -10,14 +10,25 @@ class Input extends BootstrapComponent
 {
     use Size, Model;
 
+    /**
+     * Input constructor.
+     *
+     * @param string $type
+     * @param string|null $id
+     * @param string|null $name
+     * @param null $value
+     * @param bool $checked
+     * @param string|null $grid
+     * @param string|null $src
+     */
     public function __construct(
         string $type = 'text',
         string $id = null,
-        $name = null,
+        string $name = null,
         $value = null,
-        $checked = null,
-        $grid = null,
-        $src = null
+        bool $checked = false,
+        string $grid = null,
+        string $src = null
     ) {
         $this->type = $type;
         $this->value = $value ?? 0;
@@ -58,7 +69,7 @@ class Input extends BootstrapComponent
                 $this->element()->setAttribute('id', $name);
             $this->element()->setAttribute('name', $name);
         }
-        if (isset($checked))
+        if ($checked)
             $this->element()->setAttribute('checked', $checked);
 
         if (!in_array($type, ['file', 'password'])) {

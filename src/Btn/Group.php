@@ -20,10 +20,10 @@ class Group extends BootstrapComponent
      * @param null $tag
      * @param null $content
      * @param bool $toggle
-     * @param null $grid
+     * @param null|string $grid
      * @param bool $vertical
      */
-    public function __construct($tag = null, $content = null, $toggle = null, $grid = null, $vertical = false) {
+    public function __construct($tag = null, $content = null, bool $toggle = false, $grid = null, bool $vertical = false) {
         parent::__construct($tag, $content);
 
         if ($vertical) {

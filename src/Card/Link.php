@@ -17,7 +17,14 @@ class Link extends BootstrapComponent
      */
     protected $bootstrapClass = 'card-link';
 
-    public function __construct($tag = null, $content = null, $color = null, string $text = null) {
+    /**
+     * Link constructor.
+     * @param null $tag
+     * @param null $content
+     * @param string|null $color
+     * @param string|null $text
+     */
+    public function __construct($tag = null, $content = null, string $color = null, string $text = null) {
         parent::__construct($tag, $content);
 
         $this->element()->addClass($this->textClass($text));

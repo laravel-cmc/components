@@ -18,16 +18,16 @@ class Badge extends BootstrapComponent
     /**
      * Alert constructor.
      * @param string $tag
-     * @param null $theme
+     * @param null|string $theme
      * @param null $content
      * @param bool $pill
      */
-    public function __construct($tag = null, $theme = 'primary', $content = null, $pill = null) {
+    public function __construct($tag = null, $theme = 'primary', $content = null, bool $pill = false) {
         parent::__construct($tag, $content);
 
         $this->element()->addClass($this->themeClass($theme));
 
-        if (isset($pill)) {
+        if ($pill) {
             $this->element()->addClass('badge-pill');
         }
     }

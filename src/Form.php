@@ -10,6 +10,16 @@ class Form extends BootstrapComponent
 
     public $method;
 
+    /**
+     * Form constructor.
+     * @param null $content
+     * @param string $acceptCharset
+     * @param string $method
+     * @param string|null $enctype
+     * @param bool $file
+     * @param bool $inline
+     * @param bool $validation
+     */
     public function __construct(
         $content = null,
         string $acceptCharset = 'utf-8',

@@ -14,6 +14,14 @@ class Group extends BootstrapComponent
 
     protected $bootstrapClass = 'form-group';
 
+    /**
+     * Group constructor.
+     * @param null $tag
+     * @param null $content
+     * @param bool $row
+     * @param string|null $name
+     * @param string $invalid
+     */
     public function __construct($tag = null, $content = null, bool $row = false, string $name = null, string $invalid = 'feedback') {
         parent::__construct($tag, $content);
 

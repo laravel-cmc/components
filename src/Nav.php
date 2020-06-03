@@ -10,6 +10,20 @@ class Nav extends BootstrapComponent
 
     protected $bootstrapClass = 'nav';
 
+    /**
+     * Nav constructor.
+     * @param string $tag
+     * @param null $content
+     * @param string|null $justify
+     * @param bool $vertical
+     * @param bool $tabs
+     * @param bool $pills
+     * @param bool $fill
+     * @param bool $justified
+     * @param string|null $slug
+     * @param string|null $id
+     * @param bool $card
+     */
     public function __construct(
         $tag = 'nav',
         $content = null,
