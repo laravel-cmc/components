@@ -47,15 +47,21 @@ see https://getbootstrap.com/docs/4.5/components
 #### x-alert.link
 - default parameters
 
+---
+
 #### x-badge
 - **attribute** *string|null* theme `primary|secondary|success|danger|warning|info|light|dark`
 - **attribute** *bool* pill
+
+---
 
 #### x-breadcrumb
 - default parameters
 
 #### x-breadcrumb.item
 - **attribute** *bool* active
+
+---
 
 #### x-btn
 see https://getbootstrap.com/docs/4.5/components/buttons/, 
@@ -88,6 +94,8 @@ If type="checkbox" or type="radio" id generate automatically, if not set.
 
 #### x-btn.toolbar
 - **attribute** *string|null* justify `start|end|center|between|around`
+
+---
 
 #### x-card
 - **attribute** *string|null* color
@@ -146,6 +154,8 @@ If type="checkbox" or type="radio" id generate automatically, if not set.
 - **attribute** *string|null* bg-gradient
 - **attribute** *string|null* text
 
+---
+
 #### x-carousel
 - **attribute** *string|null* id
 
@@ -169,8 +179,12 @@ If type="checkbox" or type="radio" id generate automatically, if not set.
 #### x-carousel.prev
 - default parameters
 
+---
+
 #### x-collapse
 - **attribute** *bool* show
+
+---
 
 #### x-dropdown
 - **attribute** *bool* btn-group
@@ -194,6 +208,8 @@ If type="checkbox" or type="radio" id generate automatically, if not set.
 
 #### x-dropdown.text
 - default parameters
+
+---
 
 #### x-form
 - **attribute** *string* accept-charset (default `utf-8`)
@@ -240,6 +256,8 @@ If type="checkbox" or type="radio" id generate automatically, if not set.
 - **attribute** *null* value
 - **attribute** *string|null* grid
 
+---
+
 #### x-nav
 - **attribute** *string|null* justify
 - **attribute** *bool* vertical
@@ -268,6 +286,8 @@ If type="checkbox" or type="radio" id generate automatically, if not set.
 - **attribute** *bool* active
 - **attribute** *string|null* slug (to associate with parent elements)
 
+---
+
 #### x-navbar
 - **attribute** *string|null* expand
 - **attribute** *string|null* theme
@@ -288,8 +308,12 @@ If type="checkbox" or type="radio" id generate automatically, if not set.
 #### x-navbar.toggler
 - see x-btn
 
+---
+
 #### x-optgroup
 - default parameters
+
+---
 
 #### x-option
 - default parameters
