@@ -78,6 +78,11 @@ class ComponentServiceProvider extends ServiceProvider
         Blade::component('form.select',         Form\Select::class);
         Blade::component('form.textarea',       Form\Textarea::class);
         Blade::component('form.control',        Form\Control::class);
+        // Jumbotron
+        Blade::component('jumbotron',           Jumbotron::class);
+        // List group
+        Blade::component('list-group',          ListGroup::class);
+        Blade::component('list-group.item',     ListGroup\Item::class);
         // Collapse
         Blade::component('collapse',            Collapse::class);
         // Dropdown

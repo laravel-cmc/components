@@ -258,6 +258,24 @@ If type="checkbox" or type="radio" id generate automatically, if not set.
 
 ---
 
+#### x-jumbotron
+- **attribute** *bool* fluid
+
+---
+
+#### x-list-group
+- **attribute** *string* tag `ul|div` (default `ul`)
+- **attribute** *bool* flush
+- **attribute** *string* horizontal `xs|sm|md|lg|xl`
+
+#### x-list-group.item
+- **attribute** *string* tag `a|li|button|input` (default `li`)
+- **attribute** *bool* action
+- **attribute** *bool* active
+- **attribute** *bool* disabled
+
+---
+
 #### x-nav
 - **attribute** *string|null* justify
 - **attribute** *bool* vertical
