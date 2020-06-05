@@ -1,0 +1,35 @@
+{
+    "name": "laravel-cmc/components",
+    "description": "Laravel Components based on Bootstrap",
+    "keywords": [
+        "laravel-cmc",
+        "components"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rak Vladimir",
+            "email": "rak.vladimir.victorovich@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelCMC\\Components\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "7.4.84-dev"
+        },
+        "laravel": {
+            "providers": [
+                "LaravelCMC\\Components\\ComponentServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
