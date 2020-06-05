@@ -146,6 +146,29 @@ If type="checkbox" or type="radio" id generate automatically, if not set.
 - **attribute** *string|null* bg-gradient
 - **attribute** *string|null* text
 
+#### x-carousel
+- **attribute** *string|null* id
+
+#### x-carousel.caption
+- default parameters
+
+#### x-carousel.indicators
+- **attribute** *string|null* parent-id
+- **attribute** *int|null* count
+- **attribute** *int* active
+
+#### x-carousel.inner
+- default parameters
+
+#### x-carousel.item
+- **attribute** *bool* active
+
+#### x-carousel.next
+- default parameters
+
+#### x-carousel.prev
+- default parameters
+
 #### x-collapse
 - **attribute** *bool* show
 

@@ -55,6 +55,14 @@ class ComponentServiceProvider extends ServiceProvider
         Blade::component('card.group',          Card\Group::class);
         Blade::component('card.deck',           Card\Deck::class);
         Blade::component('card.columns',        Card\Columns::class);
+        // Carousel
+        Blade::component('carousel',            Carousel::class);
+        Blade::component('carousel.caption',    Carousel\Caption::class);
+        Blade::component('carousel.indicators', Carousel\Indicators::class);
+        Blade::component('carousel.inner',      Carousel\Inner::class);
+        Blade::component('carousel.item',       Carousel\Item::class);
+        Blade::component('carousel.prev',       Carousel\Prev::class);
+        Blade::component('carousel.next',       Carousel\Next::class);
         // Nav
         Blade::component('nav',                 Nav::class);
         Blade::component('nav.item',            Nav\Item::class);
